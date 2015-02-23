@@ -2,6 +2,7 @@
 #define PICTURE_H
 
 #include <QMainWindow>
+#include <QImage>
 
 class Picture
 {
@@ -32,6 +33,9 @@ public:
     QString getName() const;
     void setName(const QString &value);
 
+    QImage getImage() const;
+    void setImage(const QImage &value);
+
 private:
     int height;
     int width;
@@ -42,6 +46,7 @@ private:
     int isFixed;//是否固定
     QString path;//图片保存路径
     QString name;//图面名称
+    QImage image;//图片的内容
 };
 
 #endif // PICTURE_H

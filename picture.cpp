@@ -81,6 +81,16 @@ void Picture::setName(const QString &value)
 {
     name = value;
 }
+QImage Picture::getImage() const
+{
+    return image;
+}
+
+void Picture::setImage(const QImage &value)
+{
+    image = value;
+}
+
 
 
 
